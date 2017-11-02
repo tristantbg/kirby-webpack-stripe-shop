@@ -91,7 +91,7 @@ $(function() {
                     draggable: isMobile,
                     dragThreshold: 20
                 });
-                app.mouseNav();
+                // app.mouseNav();
                 var vids = document.querySelectorAll(".slider video");
                 if (vids.length > 0) {
                     var hls = [];
