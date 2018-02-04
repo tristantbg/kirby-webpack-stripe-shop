@@ -4,12 +4,14 @@ module.exports = function(grunt) {
             plugins: {
                 src: [
                 'site/plugins/embed/assets/js/embed.js',
+                // 'node_modules/gsap/TweenMax.js', 
                 'node_modules/flickity/dist/flickity.pkgd.min.js', 
+                // 'node_modules/hls.js/dist/hls.light.js', 
                 //'node_modules/lazysizes/plugins/object-fit/ls.object-fit.min.js', 
-                //'node_modules/lazysizes/lazysizes.min.js', 
-                //'node_modules/lazysizes/plugins/optimumx/ls.optimumx.min.js', 
+                // 'node_modules/lazysizes/lazysizes.min.js', 
+                // 'node_modules/lazysizes/plugins/optimumx/ls.optimumx.min.js', 
                 //'node_modules/lazysizes/plugins/unveilhooks/ls.unveilhooks.min.js', 
-                //'node_modules/viewport-units-buggyfill/viewport-units-buggyfill.js',
+                // 'node_modules/viewport-units-buggyfill/viewport-units-buggyfill.js',
                 'libraries/smoothstate-with-action/src/jquery.smoothState.js'
                 ],
                 dest: 'assets/js/plugins.concat.js'
