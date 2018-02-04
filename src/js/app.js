@@ -191,7 +191,7 @@ $(function() {
           debug: true,
           scroll: false,
           anchors: '[data-target]',
-          loadingClass: 'is-loading',
+          loadingClass: false,
           prefetch: true,
           cacheLength: 4,
           onAction: function($currentTarget, $container) {
