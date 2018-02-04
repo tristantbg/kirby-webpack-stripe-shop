@@ -70,7 +70,8 @@
 	<?php endif ?>
 
 </head>
-<body>
+
+<body page-type="<?= $page->intendedTemplate() ?>">
 
 <div id="outdated">
 	<div class="inner">
@@ -79,13 +80,7 @@
 	</div>
 </div>
 
-<div class="loader">
-	<div class="spinner">
-		<svg class="circular" viewBox="25 25 50 50">
-		<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="1" stroke-miterlimit="10"></circle>
-		</svg>
-	</div>
-</div>
+<div id="loader"></div>
 
 <div id="main">
 
@@ -96,3 +91,5 @@
 	</header>
 
 	<div id="container">
+
+		<div id="page-content" page-type="<?= $page->intendedTemplate() ?>">
