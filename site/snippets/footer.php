@@ -19,7 +19,7 @@
 		var $sitetitle = '<?= $site->title()->escape() ?>';
 	</script>
 	<?php
-	echo js(array('assets/js/build/plugins.js', 'assets/js/build/app.min.js'));
+	echo js(array('assets/js/build/app.min.js'));
 	?>
 
 </body>

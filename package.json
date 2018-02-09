@@ -2,6 +2,15 @@
   "name": "",
   "description": "",
   "private": true,
+  "scripts": {
+    "prebuild": "rm -rf ../dist",
+    "build": "webpack --config ./webpack.config.js --progress",
+    "prestart": "rm -rf ../dist",
+    "start": "webpack --config ./webpack.config.js --watch --watch-poll -d --progress"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
   "devDependencies": {
     "grunt": "*",
     "grunt-contrib-concat": "*",
@@ -11,15 +20,18 @@
     "grunt-contrib-watch": "*",
     "grunt-php": "*",
     "jeet": "*",
-    "rupture": "*"
+    "rupture": "^0.7.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1"
   },
   "dependencies": {
-    "flickity": "^2.0.10",
+    "babel-core": "^6.11.4",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
     "gsap": "^1.20.3",
-    "hls.js": "^0.8.9",
-    "lazysizes": "^4.0.1",
+    "marquee3000": "^1.0.9",
     "normalize.css": "^7.0.0",
-    "smoothstate": "^0.7.2",
-    "viewport-units-buggyfill": "^0.6.2"
+    "viewport-units-buggyfill": "^0.6.2",
+    "webpack": "^3.10.0"
   }
 }
