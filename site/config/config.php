@@ -29,6 +29,8 @@ of the system, please check out http://getkirby.com/docs/advanced/options
 
 */
 
+include 'sck.config.php';
+
 c::set('debug', true);
 c::set('autobuster', true);
 c::set('plugin.embed.video.lazyload', true);

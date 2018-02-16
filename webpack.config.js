@@ -1,4 +1,5 @@
 const webpack = require('webpack');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const path = require('path');
 
 //Get path so every environment works
@@ -13,6 +14,9 @@ const config = {
     path: projectPath + '/assets/js/build/',
     filename: 'app.min.js'
   },
+  plugins: [
+    new UglifyJsPlugin()
+  ],
   module: {
     loaders: [
       {
