@@ -57,7 +57,7 @@
 
 	<?php 
 	echo css('assets/css/build/build.min.css');
-	echo js('assets/js/vendor/modernizr.min.js');
+	echo js('assets/js/build/vendor/modernizr-bundle.js');
 	?>
 
 	<?php if(!$site->customcss()->empty()): ?>
